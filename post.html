@@ -8,8 +8,8 @@
     new daum.Postcode({
         oncomplete: function(data) {
              console.log(data);
-             var zonecode = data.zonecode
-             var address = data.address 
+             var zonecode = String(data.zonecode)
+             var address = String(data.address)
              console.log(zonecode+"////"+address);
              
              android.getPost(zonecode, address);
