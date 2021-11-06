@@ -8,7 +8,11 @@
     new daum.Postcode({
         oncomplete: function(data) {
              console.log(data);
-             android.getPost("wpwpwpw");
+             var zonecode = data.zonecode
+             var address = data.address 
+             console.log(zonecode+"////"+address);
+             
+             android.getPost('wpwpwpw');
        
         },
             width : '100%',
